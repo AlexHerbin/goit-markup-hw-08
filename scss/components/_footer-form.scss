@@ -1,57 +1,57 @@
-.form-footer {
-    margin-left: 93px;
+// .form-footer {
+//     margin-left: 93px;
 
-    &-box {
-            display: flex;
-        }
+//     &-box {
+//             display: flex;
+//         }
     
-        &-title {
-            display: block;
-            margin-bottom: 20px;
+//         &-title {
+//             display: block;
+//             margin-bottom: 20px;
     
-            font-size: 14px;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
+//             font-size: 14px;
+//             letter-spacing: 0.03em;
+//             text-transform: uppercase;
     
-            color: #ffffff;
-        }
+//             color: #ffffff;
+//         }
     
-        &-field {
-            display: block;
-            width: 358px;
-            padding: 15px 16px;
+//         &-field {
+//             display: block;
+//             width: 358px;
+//             padding: 15px 16px;
     
-            color: #fff;
-            background-color: inherit;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 4px;
+//             color: #fff;
+//             background-color: inherit;
+//             border: 1px solid rgba(255, 255, 255, 0.3);
+//             border-radius: 4px;
     
-            outline: transparent;
-        }
+//             outline: transparent;
+//         }
     
-        &-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+//         &-btn {
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
     
-            padding: 10px 29px;
-            margin-left: 12px;
+//             padding: 10px 29px;
+//             margin-left: 12px;
     
-            font-weight: 700;
-            line-height: 1.88;
-            letter-spacing: 0.06em;
+//             font-weight: 700;
+//             line-height: 1.88;
+//             letter-spacing: 0.06em;
     
-            color: #fff;
-            background: var(--accent-color);
-            border-color: transparent;
+//             color: #fff;
+//             background: var(--accent-color);
+//             border-color: transparent;
     
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-            border-radius: 4px;
-            cursor: pointer;
-        }
+//             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//             border-radius: 4px;
+//             cursor: pointer;
+//         }
     
-        &-icon {
-            margin-left: 10px;
-        }
-}
+//         &-icon {
+//             margin-left: 10px;
+//         }
+// }
 

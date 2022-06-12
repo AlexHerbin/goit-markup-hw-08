@@ -1,47 +1,47 @@
-.footer {
-    padding: 60px 0;
+// .footer {
+//     padding: 60px 0;
 
-    background-color: #2f303a;
+//     background-color: #2f303a;
 
-    &-container {
-            display: flex;
-            align-items: baseline;
-        }
-}
+//     &-container {
+//             display: flex;
+//             align-items: baseline;
+//         }
+// }
 
-.logo-text {
-    color: #fff;
-}
+// .logo-text {
+//     color: #fff;
+// }
 
-.adr {
-    margin-bottom: 9px;
+// .adr {
+//     margin-bottom: 9px;
 
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
+//     font-style: normal;
+//     font-size: 14px;
+//     line-height: 1.71;
 
-    color: #fff;
-}
+//     color: #fff;
+// }
 
-.mail:not(:last-child) {
-    margin-bottom: 9px;
-}
+// .mail:not(:last-child) {
+//     margin-bottom: 9px;
+// }
 
-.footer-auth .link {
-    font-size: 14px;
-    line-height: 1.71;
+// .footer-auth .link {
+//     font-size: 14px;
+//     line-height: 1.71;
 
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
+//     color: rgba(255, 255, 255, 0.6);
+//     text-decoration: none;
 
-    transition: color 250ms var(--taiming-function);
-}
+//     transition: color 250ms var(--taiming-function);
+// }
 
-.footer-auth .link:focus,
-.footer-auth .link:hover {
-    color: var(--accent-color);
-}
+// .footer-auth .link:focus,
+// .footer-auth .link:hover {
+//     color: var(--accent-color);
+// }
 
-.logo-section {
-    margin-right: 70px;
-}
+// .logo-section {
+//     margin-right: 70px;
+// }
