@@ -58,9 +58,13 @@
     &__icon-cross {
         display: none;
 
-        &--is-open {
-            display: block;
-        }
     }
 }
 
+.menu-btn.is-open .menu-btn__icon-cross {
+    display: block;
+}
+
+.menu-btn.is-open .menu-btn__icon-menu {
+    display: none;
+}

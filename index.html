@@ -21,26 +21,26 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="container main-nav">
+      <div class="container container--main-nav">
         <a href="./index.html" class="logo"
-          >Web<span class="logo-main">Studio</span></a
+          >Web<span class="logo__main">Studio</span></a
         >
-        <!-- <nav>
-          <ul class="site-nav list">
-            <li class="item">
-              <a class="link current" href="./index.html">Студия</a>
+        <nav>
+          <!-- <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a class="site-nav__link current" href="./index.html">Студия</a>
             </li>
 
-            <li class="item">
-              <a class="link" href="./portfolio.html">Портфолио</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
 
-            <li class="item">
-              <a class="link" href="">Контакты</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="">Контакты</a>
             </li>
           </ul> -->
 
-          <button class="menu-btn menu-btn--is-open" type="button">
+          <button class="menu-btn is-open" type="button" data-menu-button>
             <svg
               width="40"
               height="40"
@@ -57,19 +57,20 @@
             </svg>
           </button>
         </nav>
+
         <!-- <ul class="auth-nav list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg width="16" height="12" class="icon">
+          <li class="auth-nav__item">
+            <a href="mailto:info@devstudio.com" class="auth-nav__link">
+              <svg width="16" height="12" class="auth-nav__icon">
                 <use href="./image/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
 
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
-              <svg width="10" height="16" class="icon">
+          <li class="auth-nav__item">
+            <a href="tel:+380961111111" class="auth-nav__link">
+              <svg width="10" height="16" class="auth-nav__icon">
                 <use href="./image/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -667,5 +668,6 @@
     </footer> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
