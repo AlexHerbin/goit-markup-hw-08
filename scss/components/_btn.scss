@@ -48,3 +48,19 @@
 //             }
 // }
 
+.menu-btn {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+    &__icon-cross {
+        display: none;
+
+        &--is-open {
+            display: block;
+        }
+    }
+}
+

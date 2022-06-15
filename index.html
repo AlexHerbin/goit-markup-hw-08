@@ -20,12 +20,12 @@
 
   <body>
     <!-- Шапка сайта -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container main-nav">
         <a href="./index.html" class="logo"
           >Web<span class="logo-main">Studio</span></a
         >
-        <nav>
+        <!-- <nav>
           <ul class="site-nav list">
             <li class="item">
               <a class="link current" href="./index.html">Студия</a>
@@ -38,9 +38,26 @@
             <li class="item">
               <a class="link" href="">Контакты</a>
             </li>
-          </ul>
+          </ul> -->
+
+          <button class="menu-btn menu-btn--is-open" type="button">
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="menu-btn__icon-cross"
+                href="./image/sprite.svg#icon-cross-mob"
+              ></use>
+              <use
+                class="menu-btn__icon-menu"
+                href="./image/sprite.svg#icon-menu-mob"
+              ></use>
+            </svg>
+          </button>
         </nav>
-        <ul class="auth-nav list">
+        <!-- <ul class="auth-nav list">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="link">
               <svg width="16" height="12" class="icon">
@@ -58,9 +75,9 @@
               +38 096 111 11 11</a
             >
           </li>
-        </ul>
+        </ul> -->
       </div>
-    </header> -->
+    </header>
 
     <!-- Мейн -->
     <main>
@@ -203,9 +220,11 @@
       </section>
 
       <!-- Наши работы -->
-      <!-- <section class="section-works">
+      <section class="section-works">
         <div class="container">
-          <h2 class="container__title">Чем мы занимаемся</h2>
+          <h2 class="container__title container__title--hidden">
+            Чем мы занимаемся
+          </h2>
           <ul class="works-list list">
             <li class="works-list__item">
               <img
@@ -238,7 +257,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Команда -->
       <section class="section team">
