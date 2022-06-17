@@ -55,11 +55,19 @@
     border: none;
     background-color: transparent;
 
+    
     z-index: 100;
 
     &__icon-cross {
         display: none;
+    }
 
+    &__icon {
+        transition: fill 250ms var(--taiming-function);
+    }
+
+    &__icon:hover {
+        fill: var(--accent-color);
     }
 }
 

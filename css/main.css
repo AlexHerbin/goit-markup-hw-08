@@ -206,6 +206,12 @@ textarea {
 .mobile-menu-nav__link {
   color: #212121;
   text-decoration: none;
+  -webkit-transition: color 250ms var(--taiming-function);
+  transition: color 250ms var(--taiming-function);
+}
+
+.mobile-menu-nav__link:hover {
+  color: var(--accent-color);
 }
 
 .mobile-menu-contacts {
@@ -223,6 +229,8 @@ textarea {
 .mobile-menu-contacts__link {
   color: var(--primary-text-color);
   text-decoration: none;
+  -webkit-transition: color 250ms var(--taiming-function);
+  transition: color 250ms var(--taiming-function);
 }
 
 .mobile-menu-contacts__link--size {
@@ -231,14 +239,23 @@ textarea {
   line-height: 1.17;
 }
 
+.mobile-menu-contacts__link:hover {
+  color: var(--accent-color);
+}
+
 .mobile-menu-socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
 }
 
 .mobile-menu-socials__item:not(:last-child) {
-  border-right: 1px solid var(--primary-text-color);
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
 }
 
 .mobile-menu-socials__link {
@@ -260,6 +277,15 @@ textarea {
 
 .menu-btn__icon-cross {
   display: none;
+}
+
+.menu-btn__icon {
+  -webkit-transition: fill 250ms var(--taiming-function);
+  transition: fill 250ms var(--taiming-function);
+}
+
+.menu-btn__icon:hover {
+  fill: var(--accent-color);
 }
 
 .menu-btn.is-open .menu-btn__icon-cross {

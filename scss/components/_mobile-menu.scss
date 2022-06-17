@@ -37,6 +37,11 @@
     &__link {
         color: #212121;
         text-decoration: none;
+        transition: color 250ms var(--taiming-function);
+    }
+
+    &__link:hover {
+        color: var(--accent-color)
     }
 }
 
@@ -55,6 +60,7 @@
     &__link {
             color: var(--primary-text-color);
             text-decoration: none;
+            transition: color 250ms var(--taiming-function);
 
             &--size {
                 margin-bottom: 64px;
@@ -62,20 +68,28 @@
                 line-height: 1.17;
             }
         } 
+    
+    &__link:hover {
+        color: var(--accent-color);
+    }
 }
 
 .mobile-menu-socials {
     display: flex;
 
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
     &__item:not(:last-child) {
-            border-right: 1px solid var(--primary-text-color);
+            border-right: 1px solid rgba(33, 33, 33, 0.2);
+            margin-right: 10px;
         }
 
     &__link {
         padding-right:10px;
         color:var(--accent-color);
         text-decoration: none;
-    }
-
-    
+    }   
 }   

@@ -25,7 +25,6 @@
         <a href="./index.html" class="logo"
           >Web<span class="logo__main">Studio</span></a
         >
-
         <button
           class="menu-btn is-open"
           type="button"
@@ -33,17 +32,18 @@
           data-menu-button
         >
           <svg
+            class="menu-btn__icon"
             width="40"
             height="40"
             aria-label="Переключатель мобильного меню"
           >
             <use
-              class="menu-btn__icon-cross"
-              href="./image/sprite.svg#icon-cross-mob"
-            ></use>
-            <use
               class="menu-btn__icon-menu"
               href="./image/sprite.svg#icon-menu-mob"
+            ></use>
+            <use
+              class="menu-btn__icon-cross"
+              href="./image/sprite.svg#icon-cross-mob"
             ></use>
           </svg>
         </button>
@@ -676,9 +676,7 @@
     <div class="mobile-menu is-open" data-menu>
       <ul class="mobile-menu-nav list">
         <li class="mobile-menu-nav__item">
-          <a class="mobile-menu-nav__link current" href="./index.html"
-            >Студия</a
-          >
+          <a class="mobile-menu-nav__link" href="./index.html">Студия</a>
         </li>
         <li class="mobile-menu-nav__item">
           <a class="mobile-menu-nav__link" href="./portfolio.html">Портфолио</a>
