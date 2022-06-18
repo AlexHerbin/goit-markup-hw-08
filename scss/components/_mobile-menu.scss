@@ -12,11 +12,15 @@
     background-color: #fff;
     
 
-    transform: translateX(100%);
+    transform: translateX(0);
 
 
     &.is-open {
-        transform: translateX(0);
+        transform: translateX(100%);
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
     }
 }
 
