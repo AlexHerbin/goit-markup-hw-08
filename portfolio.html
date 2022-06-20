@@ -21,121 +21,38 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <div class="container container--main-nav">
+      <div class="container main-nav">
         <a href="./index.html" class="logo"
-          >Web<span class="logo__main">Studio</span></a
+          >Web<span class="logo-main">Studio</span></a
         >
-
-        <!-- моб.меню -->
-        <button
-          class="menu-btn js-open-menu"
-          type="button"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            class="menu-btn__icon"
-            width="40"
-            height="40"
-            aria-label="Переключатель мобильного меню"
-          >
-            <use
-              class="menu-btn__icon-menu"
-              href="./image/sprite.svg#icon-menu-mob"
-            ></use>
-          </svg>
-        </button>
-
-        <div class="mobile-menu js-menu-container" id="mobile-menu">
-          <button class="menu-btn menu-btn--cross js-close-menu" type="button">
-            <svg
-              class="menu-btn__icon"
-              width="40"
-              height="40"
-              aria-label="Переключатель мобильного меню"
-            >
-              <use
-                class="menu-btn__icon-menu"
-                href="./image/sprite.svg#icon-cross-mob"
-              ></use>
-            </svg>
-          </button>
-          <ul class="mobile-menu-nav list">
-            <li class="mobile-menu-nav__item">
-              <a class="mobile-menu-nav__link" href="./index.html">Студия</a>
-            </li>
-            <li class="mobile-menu-nav__item">
-              <a class="mobile-menu-nav__link" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="mobile-menu-nav__item">
-              <a class="mobile-menu-nav__link" href="">Контакты</a>
-            </li>
-          </ul>
-
-          <ul class="mobile-menu-contacts list">
-            <li class="mobile-menu-contacts__item">
-              <a class="mobile-menu-contacts__link" href="tel:+38 096 111 11 11"
-                >+38 096 111 11 11</a
-              >
-            </li>
-            <li class="mobile-menu-contacts__item">
-              <a
-                class="mobile-menu-contacts__link mobile-menu-contacts__link--size"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-
-          <ul class="mobile-menu-socials list">
-            <li class="mobile-menu-socials__item">
-              <a class="mobile-menu-socials__link" href="">Instagram</a>
-            </li>
-            <li class="mobile-menu-socials__item">
-              <a class="mobile-menu-socials__link" href="">Twitter</a>
-            </li>
-            <li class="mobile-menu-socials__item">
-              <a class="mobile-menu-socials__link" href="">Facebook</a>
-            </li>
-            <li class="mobile-menu-socials__item">
-              <a class="mobile-menu-socials__link" href="">LinkedIn</a>
-            </li>
-          </ul>
-        </div>
-
         <nav>
           <ul class="site-nav list">
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Студия</a>
+            <li class="item">
+              <a href="./index.html" class="link">Студия</a>
             </li>
 
-            <li class="site-nav__item">
-              <a class="site-nav__link current" href="./portfolio.html"
-                >Портфолио</a
-              >
+            <li class="item">
+              <a href="./portfolio.html" class="link current">Портфолио</a>
             </li>
 
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="">Контакты</a>
+            <li class="item">
+              <a href="" class="link">Контакты</a>
             </li>
           </ul>
         </nav>
-
         <ul class="auth-nav list">
-          <li class="auth-nav__item">
-            <a href="mailto:info@devstudio.com" class="auth-nav__link">
-              <svg width="16" height="12" class="auth-nav__icon">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg width="16" height="12" class="icon">
                 <use href="./image/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
 
-          <li class="auth-nav__item">
-            <a href="tel:+380961111111" class="auth-nav__link">
-              <svg width="10" height="16" class="auth-nav__icon">
+          <li class="item">
+            <a href="tel:+380961111111" class="link">
+              <svg width="10" height="16" class="icon">
                 <use href="./image/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -175,45 +92,11 @@
             <li class="item">
               <a href="" class="link">
                 <div class="works-thumb">
-                  <picture>
-                    <!--изображение для десктоп-->
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="
-                        ./image/portfolio/portfolio1_lg.jpg    1x,
-                        ./image/portfolio/portfolio1_lg@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для таблетки-->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./image/portfolio/portfolio1_md.jpg    1x,
-                        ./image/portfolio/portfolio1_md@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для моб.-->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./image/portfolio/portfolio1_sm.jpg    1x,
-                        ./image/portfolio/portfolio1_sm@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!-- дефолтное изображение -->
-                    <img
-                      src="./image/portfolio/portfolio1_sm.jpg"
-                      alt="картинка сайта"
-                      width="450"
-                      loading="lazy"
-                    />
-                  </picture>
+                  <img
+                    src="./image/portfolio/portfolio1.jpg"
+                    alt="картинка сайта"
+                    width="370"
+                  />
                   <p class="text-thumb">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -230,46 +113,11 @@
             <li class="item">
               <a href="" class="link">
                 <div class="works-thumb">
-                  <picture>
-                    <!--изображение для десктоп-->
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="
-                        ./image/portfolio/portfolio2_lg.jpg    1x,
-                        ./image/portfolio/portfolio2_lg@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для таблетки-->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./image/portfolio/portfolio2_md.jpg    1x,
-                        ./image/portfolio/portfolio2_md@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для моб.-->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./image/portfolio/portfolio2_sm.jpg    1x,
-                        ./image/portfolio/portfolio2_sm@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!-- дефолтное изображение -->
-                    <img
-                      src="./image/portfolio/portfolio2_sm.jpg"
-                      alt="баксетбольный постер"
-                      width="450"
-                      loading="lazy"
-                    />
-                  </picture>
-
+                  <img
+                    src="./image/portfolio/portfolio2.jpg"
+                    alt="баксетбольный постер"
+                    width="370"
+                  />
                   <p class="text-thumb">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -288,46 +136,11 @@
             <li class="item">
               <a href="" class="link">
                 <div class="works-thumb">
-                  <picture>
-                    <!--изображение для десктоп-->
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="
-                        ./image/portfolio/portfolio3_lg.jpg    1x,
-                        ./image/portfolio/portfolio3_lg@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для таблетки-->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./image/portfolio/portfolio3_md.jpg    1x,
-                        ./image/portfolio/portfolio3_md@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для моб.-->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./image/portfolio/portfolio3_sm.jpg    1x,
-                        ./image/portfolio/portfolio3_sm@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!-- дефолтное изображение -->
-                    <img
-                      src="./image/portfolio/portfolio3_sm.jpg"
-                      alt="постер ресторана"
-                      width="450"
-                      loading="lazy"
-                    />
-                  </picture>
-
+                  <img
+                    src="./image/portfolio/portfolio3.jpg"
+                    alt="постер ресторана"
+                    width="370"
+                  />
                   <p class="text-thumb">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -344,46 +157,11 @@
             <li class="item">
               <a href="" class="link">
                 <div class="works-thumb">
-                  <picture>
-                    <!--изображение для десктоп-->
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="
-                        ./image/portfolio/portfolio4_lg.jpg    1x,
-                        ./image/portfolio/portfolio4_lg@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для таблетки-->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./image/portfolio/portfolio4_md.jpg    1x,
-                        ./image/portfolio/portfolio4_md@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для моб.-->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./image/portfolio/portfolio4_sm.jpg    1x,
-                        ./image/portfolio/portfolio4_sm@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!-- дефолтное изображение -->
-                    <img
-                      src="./image/portfolio/portfolio4_sm.jpg"
-                      alt="картинка с наушниками"
-                      width="450"
-                      loading="lazy"
-                    />
-                  </picture>
-
+                  <img
+                    src="./image/portfolio/portfolio4.jpg"
+                    alt="картинка с наушниками"
+                    width="370"
+                  />
                   <p class="text-thumb">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -400,46 +178,11 @@
             <li class="item">
               <a href="" class="link">
                 <div class="works-thumb">
-                  <picture>
-                    <!--изображение для десктоп-->
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="
-                        ./image/portfolio/portfolio5_lg.jpg    1x,
-                        ./image/portfolio/portfolio5_lg@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для таблетки-->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./image/portfolio/portfolio5_md.jpg    1x,
-                        ./image/portfolio/portfolio5_md@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для моб.-->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./image/portfolio/portfolio5_sm.jpg    1x,
-                        ./image/portfolio/portfolio5_sm@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!-- дефолтное изображение -->
-                    <img
-                      src="./image/portfolio/portfolio5_sm.jpg"
-                      alt="картинка с коробками"
-                      width="450"
-                      loading="lazy"
-                    />
-                  </picture>
-
+                  <img
+                    src="./image/portfolio/portfolio5.jpg"
+                    alt="картинка с коробками"
+                    width="370"
+                  />
                   <p class="text-thumb">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -456,46 +199,11 @@
             <li class="item">
               <a href="" class="link">
                 <div class="works-thumb">
-                  <picture>
-                    <!--изображение для десктоп-->
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="
-                        ./image/portfolio/portfolio6_lg.jpg    1x,
-                        ./image/portfolio/portfolio6_lg@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для таблетки-->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./image/portfolio/portfolio6_md.jpg    1x,
-                        ./image/portfolio/portfolio6_md@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для моб.-->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./image/portfolio/portfolio6_sm.jpg    1x,
-                        ./image/portfolio/portfolio6_sm@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!-- дефолтное изображение -->
-                    <img
-                      src="./image/portfolio/portfolio6_sm.jpg"
-                      alt="картинка с монитором"
-                      width="450"
-                      loading="lazy"
-                    />
-                  </picture>
-
+                  <img
+                    src="./image/portfolio/portfolio6.jpg"
+                    alt="картинка с монитором"
+                    width="370"
+                  />
                   <p class="text-thumb">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -514,46 +222,11 @@
             <li class="item">
               <a href="" class="link">
                 <div class="works-thumb">
-                  <picture>
-                    <!--изображение для десктоп-->
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="
-                        ./image/portfolio/portfolio7_lg.jpg    1x,
-                        ./image/portfolio/portfolio7_lg@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для таблетки-->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./image/portfolio/portfolio7_md.jpg    1x,
-                        ./image/portfolio/portfolio7_md@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для моб.-->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./image/portfolio/portfolio7_sm.jpg    1x,
-                        ./image/portfolio/portfolio7_sm@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!-- дефолтное изображение -->
-                    <img
-                      src="./image/portfolio/portfolio7_sm.jpg"
-                      alt="картинка с журналом"
-                      width="450"
-                      loading="lazy"
-                    />
-                  </picture>
-
+                  <img
+                    src="./image/portfolio/portfolio7.jpg"
+                    alt="картинка с журналом"
+                    width="370"
+                  />
                   <p class="text-thumb">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -572,46 +245,11 @@
             <li class="item">
               <a href="" class="link">
                 <div class="works-thumb">
-                  <picture>
-                    <!--изображение для десктоп-->
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="
-                        ./image/portfolio/portfolio8_lg.jpg    1x,
-                        ./image/portfolio/portfolio8_lg@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для таблетки-->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./image/portfolio/portfolio8_md.jpg    1x,
-                        ./image/portfolio/portfolio8_md@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для моб.-->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./image/portfolio/portfolio8_sm.jpg    1x,
-                        ./image/portfolio/portfolio8_sm@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!-- дефолтное изображение -->
-                    <img
-                      src="./image/portfolio/portfolio8_sm.jpg"
-                      alt="картинка с биркой"
-                      width="450"
-                      loading="lazy"
-                    />
-                  </picture>
-
+                  <img
+                    src="./image/portfolio/portfolio8.jpg"
+                    alt="картинка с биркой"
+                    width="370"
+                  />
                   <p class="text-thumb">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -628,46 +266,11 @@
             <li class="item">
               <a href="" class="link">
                 <div class="works-thumb">
-                  <picture>
-                    <!--изображение для десктоп-->
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="
-                        ./image/portfolio/portfolio9_lg.jpg    1x,
-                        ./image/portfolio/portfolio9_lg@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для таблетки-->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./image/portfolio/portfolio9_md.jpg    1x,
-                        ./image/portfolio/portfolio9_md@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!--изображение для моб.-->
-                    <source
-                      media="(max-width: 767px)"
-                      srcset="
-                        ./image/portfolio/portfolio9_sm.jpg    1x,
-                        ./image/portfolio/portfolio9_sm@2x.jpg 2x
-                      "
-                      type="image/jpg"
-                    />
-
-                    <!-- дефолтное изображение -->
-                    <img
-                      src="./image/portfolio/portfolio8_sm.jpg"
-                      alt="картинка с ноутбуком"
-                      width="450"
-                      loading="lazy"
-                    />
-                  </picture>
-
+                  <img
+                    src="./image/portfolio/portfolio9.jpg"
+                    alt="картинка с ноутбуком"
+                    width="370"
+                  />
                   <p class="text-thumb">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -783,7 +386,5 @@
         </form>
       </div>
     </footer>
-
-    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
