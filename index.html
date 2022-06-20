@@ -26,12 +26,12 @@
           >Web<span class="logo__main">Studio</span></a
         >
 
-        <!-- Кнопка моб.меню -->
+        <!-- моб.меню -->
         <button
-          class="menu-btn is-open"
+          class="menu-btn js-open-menu"
           type="button"
           aria-expanded="false"
-          data-menu-button
+          aria-controls="mobile-menu"
         >
           <svg
             class="menu-btn__icon"
@@ -43,13 +43,69 @@
               class="menu-btn__icon-menu"
               href="./image/sprite.svg#icon-menu-mob"
             ></use>
-            <use
-              class="menu-btn__icon-cross"
-              href="./image/sprite.svg#icon-cross-mob"
-            ></use>
           </svg>
         </button>
 
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+          <button class="menu-btn menu-btn--cross js-close-menu" type="button">
+            <svg
+              class="menu-btn__icon"
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="menu-btn__icon-menu"
+                href="./image/sprite.svg#icon-cross-mob"
+              ></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu-nav list">
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mobile-menu-nav__item">
+              <a class="mobile-menu-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-contacts list">
+            <li class="mobile-menu-contacts__item">
+              <a class="mobile-menu-contacts__link" href="tel:+38 096 111 11 11"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu-contacts__item">
+              <a
+                class="mobile-menu-contacts__link mobile-menu-contacts__link--size"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile-menu-socials list">
+            <li class="mobile-menu-socials__item">
+              <a class="mobile-menu-socials__link" href="">Instagram</a>
+            </li>
+            <li class="mobile-menu-socials__item">
+              <a class="mobile-menu-socials__link" href="">Twitter</a>
+            </li>
+            <li class="mobile-menu-socials__item">
+              <a class="mobile-menu-socials__link" href="">Facebook</a>
+            </li>
+            <li class="mobile-menu-socials__item">
+              <a class="mobile-menu-socials__link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- навигация сайта -->
         <nav>
           <ul class="site-nav list">
             <li class="site-nav__item">
@@ -91,7 +147,7 @@
     <!-- Мейн -->
     <main>
       <!-- Герой -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero-btn" data-modal-open>
@@ -166,7 +222,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- Наши особенности -->
       <section class="section">
@@ -236,32 +292,71 @@
           </h2>
           <ul class="works-list list">
             <li class="works-list__item">
-              <img
-                class="img"
-                src="./image/main/photo1.jpg"
-                alt="картинка с компьютером"
-                width="370"
-              />
+              <picture>
+                <!--изображение для десктоп-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./image/main/photo1_lg.jpg    1x,
+                    ./image/main/photo1_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- дефолтное изображение -->
+                <img
+                  class="img"
+                  src="./image/main/photo1_lg.jpg"
+                  alt="картинка с компьютером"
+                  width="370"
+                />
+              </picture>
+
               <p class="works-list__text">Десктопные приложения</p>
             </li>
 
             <li class="works-list__item">
-              <img
-                class="img"
-                src="./image/main/photo2.jpg"
-                alt="картинка с ноутбуком"
-                width="370"
-              />
+              <picture>
+                <!--изображение для десктоп-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./image/main/photo2_lg.jpg    1x,
+                    ./image/main/photo2_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- дефолтное изображение -->
+                <img
+                  class="img"
+                  src="./image/main/photo2_lg.jpg"
+                  alt="картинка с ноутбуком"
+                  width="370"
+                />
+              </picture>
+
               <p class="works-list__text">Мобильные приложения</p>
             </li>
 
             <li class="works-list__item">
-              <img
-                class="img"
-                src="./image/main/photo3.jpg"
-                alt="картинка с планшетом"
-                width="370"
-              />
+              <picture>
+                <!--изображение для десктоп-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./image/main/photo3_lg.jpg    1x,
+                    ./image/main/photo3_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- дефолтное изображение -->
+                <img
+                  class="img"
+                  src="./image/main/photo3_lg.jpg"
+                  alt="картинка с планшетом"
+                  width="370"
+                />
+              </picture>
+
               <p class="works-list__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -274,7 +369,45 @@
           <h2 class="container__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img src="./image/main/staff1.jpg" alt="сотрудник1" width="270" />
+              <picture>
+                <!--изображение для десктоп-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./image/main/team/staff1_lg.jpg    1x,
+                    ./image/main/team/staff1_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!--изображение для таблетки-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./image/main/team/staff1_md.jpg    1x,
+                    ./image/main/team/staff1_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!--изображение для моб.-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./image/main/team/staff1_sm.jpg    1x,
+                    ./image/main/team/staff1_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- дефолтное изображение -->
+                <img
+                  src="./image/main/team/staff1_sm.jpg"
+                  alt="сотрудник1"
+                  width="450"
+                  loading="lazy"
+                />
+              </picture>
               <div class="card-content">
                 <h3 class="card-content__title">Игорь Демьяненко</h3>
                 <p lang="en" class="card-content__text">Product Designer</p>
@@ -335,7 +468,45 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./image/main/staff2.jpg" alt="сотрудник2" width="270" />
+              <picture>
+                <!--изображение для десктоп-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./image/main/team/staff2_lg.jpg    1x,
+                    ./image/main/team/staff2_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!--изображение для таблетки-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./image/main/team/staff2_md.jpg    1x,
+                    ./image/main/team/staff2_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!--изображение для моб.-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./image/main/team/staff2_sm.jpg    1x,
+                    ./image/main/team/staff2_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- дефолтное изображение -->
+                <img
+                  src="./image/main/team/staff2_sm.jpg"
+                  alt="сотрудник2"
+                  width="450"
+                  loading="lazy"
+                />
+              </picture>
               <div class="card-content">
                 <h3 class="card-content__title">Ольга Репина</h3>
                 <p lang="en" class="card-content__text">Frontend Developer</p>
@@ -396,7 +567,45 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./image/main/staff3.jpg" alt="сотрудник3" width="270" />
+              <picture>
+                <!--изображение для десктоп-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./image/main/team/staff3_lg.jpg    1x,
+                    ./image/main/team/staff3_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!--изображение для таблетки-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./image/main/team/staff3_md.jpg    1x,
+                    ./image/main/team/staff3_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!--изображение для моб.-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./image/main/team/staff3_sm.jpg    1x,
+                    ./image/main/team/staff3_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- дефолтное изображение -->
+                <img
+                  src="./image/main/team/staff3_sm.jpg"
+                  alt="сотрудник3"
+                  width="450"
+                  loading="lazy"
+                />
+              </picture>
               <div class="card-content">
                 <h3 class="card-content__title">Николай Тарасов</h3>
                 <p lang="en" class="card-content__text">Marketing</p>
@@ -457,7 +666,45 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./image/main/staff4.jpg" alt="сотрудник4" width="270" />
+              <picture>
+                <!--изображение для десктоп-->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./image/main/team/staff4_lg.jpg    1x,
+                    ./image/main/team/staff4_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!--изображение для таблетки-->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./image/main/team/staff4_md.jpg    1x,
+                    ./image/main/team/staff4_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!--изображение для моб.-->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./image/main/team/staff4_sm.jpg    1x,
+                    ./image/main/team/staff4_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+
+                <!-- дефолтное изображение -->
+                <img
+                  src="./image/main/team/staff4_sm.jpg"
+                  alt="сотрудник4"
+                  width="450"
+                  loading="lazy"
+                />
+              </picture>
               <div class="card-content">
                 <h3 class="card-content__title">Михаил Ермаков</h3>
                 <p lang="en" class="card-content__text">UI Designer</p>
@@ -578,7 +825,7 @@
     </main>
 
     <!--Подвал  -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-container container">
         <div class="logo-section">
           <a href="./index.html" class="logo-ft"
@@ -673,51 +920,7 @@
           </div>
         </form>
       </div>
-    </footer> -->
-
-    <div class="mobile-menu is-open" data-menu>
-      <ul class="mobile-menu-nav list">
-        <li class="mobile-menu-nav__item">
-          <a class="mobile-menu-nav__link" href="./index.html">Студия</a>
-        </li>
-        <li class="mobile-menu-nav__item">
-          <a class="mobile-menu-nav__link" href="./portfolio.html">Портфолио</a>
-        </li>
-        <li class="mobile-menu-nav__item">
-          <a class="mobile-menu-nav__link" href="">Контакты</a>
-        </li>
-      </ul>
-
-      <ul class="mobile-menu-contacts list">
-        <li class="mobile-menu-contacts__item">
-          <a class="mobile-menu-contacts__link" href="tel:+38 096 111 11 11"
-            >+38 096 111 11 11</a
-          >
-        </li>
-        <li class="mobile-menu-contacts__item">
-          <a
-            class="mobile-menu-contacts__link mobile-menu-contacts__link--size"
-            href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-      </ul>
-
-      <ul class="mobile-menu-socials list">
-        <li class="mobile-menu-socials__item">
-          <a class="mobile-menu-socials__link" href="">Instagram</a>
-        </li>
-        <li class="mobile-menu-socials__item">
-          <a class="mobile-menu-socials__link" href="">Twitter</a>
-        </li>
-        <li class="mobile-menu-socials__item">
-          <a class="mobile-menu-socials__link" href="">Facebook</a>
-        </li>
-        <li class="mobile-menu-socials__item">
-          <a class="mobile-menu-socials__link" href="">LinkedIn</a>
-        </li>
-      </ul>
-    </div>
+    </footer>
 
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>

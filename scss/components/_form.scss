@@ -1,160 +1,171 @@
-// .form {
-//     margin-left: auto;
-//     margin-right: auto;
+.form {
+    margin-left: auto;
+    margin-right: auto;
 
-//     &-btn {
-//             padding: 10px 55px;
+    &-btn {
+            padding: 10px 55px;
     
-//             font-family: inherit;
-//             font-weight: 700;
-//             font-size: 16px;
-//             line-height: 1.88;
-//             letter-spacing: 0.06em;
-//             cursor: pointer;
+            font-family: inherit;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.88;
+            letter-spacing: 0.06em;
+            cursor: pointer;
     
-//             background: #188ce8;
-//             color: #fff;
-//             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//             border-radius: 4px;
-//             border: none;
-//         }
+            background: #188ce8;
+            color: #fff;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            border: none;
+        }
 
-//         &-title {
-//             display: block;
-//             margin-bottom: 12px;
+        &-title {
+            display: block;
+            margin-bottom: 12px;
     
-//             font-size: 20px;
-//             line-height: 1.15;
-//             text-align: center;
-//             letter-spacing: 0.03em;
+            font-size: 20px;
+            line-height: 1.5;
+            text-align: center;
+            letter-spacing: 0.03em;
     
-//             color: #212121;
-//         }
+            color: #212121;
+
+            @media screen and (min-width: 1200px) {
+                line-height: 1.15;
+            }
+        }
     
-//         &-group {
-//             display: block;
+        &-group {
+            display: block;
     
-//             margin-bottom: 10px;
-//         }
+            margin-bottom: 10px;
+        }
     
-//         &-label {
-//             display: block;
-//             margin-bottom: 4px;
+        &-label {
+            display: block;
+            margin-bottom: 4px;
     
-//             font-size: 12px;
-//             line-height: 1.17;
-//             letter-spacing: 0.01em;
-//             text-align: left;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.01em;
+            text-align: left;
     
-//             color: var(--primary-text-color);
-//         }
+            color: var(--primary-text-color);
+        }
     
-//         &-input {
-//             padding: 12px 5px 12px 42px;
+        &-input {
+            padding: 12px 5px 12px 42px;
     
-//             width: 100%;
+            width: 100%;
     
-//             border: 1px solid rgba(33, 33, 33, 0.2);
-//             border-radius: 4px;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
     
-//             cursor: pointer;
-//             outline: transparent;
+            cursor: pointer;
+            outline: transparent;
     
-//             transition: border 250ms var(--taiming-function);
-//         }
+            transition: border 250ms var(--taiming-function);
+        }
     
-//         &-input:focus,
-//         &-comment:focus {
-//             border: 1px solid var(--accent-color);
-//         }
+        &-input:focus,
+        &-comment:focus {
+            border: 1px solid var(--accent-color);
+        }
     
-//         &-field {
-//             position: relative;
-//         }
+        &-field {
+            position: relative;
+        }
     
-//         &-icon {
-//             position: absolute;
-//             left: 12px;
-//             top: 50%;
+        &-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
     
-//             transform: translateY(-50%);
-//             transition: fill 250ms var(--taiming-function);
-//         }
+            transform: translateY(-50%);
+            transition: fill 250ms var(--taiming-function);
+        }
     
-//         &-input:focus~&-icon {
-//             fill: var(--accent-color);
-//         }
+        &-input:focus~&-icon {
+            fill: var(--accent-color);
+        }
     
-//         &-textarea {
-//             display: block;
-//             margin-bottom: 20px;
-//         }
+        &-textarea {
+            display: block;
+            margin-bottom: 20px;
+        }
     
-//         &-comment {
-//             display: block;
-//             height: 120px;
+        &-comment {
+            display: block;
+            height: 120px;
     
-//             padding: 12px 16px;
-//             width: 100%;
+            padding: 12px 16px;
+            width: 100%;
     
-//             border: 1px solid rgba(33, 33, 33, 0.2);
-//             border-radius: 4px;
-//             outline: transparent;
+            border: 1px solid rgba(33, 33, 33, 0.2);
+            border-radius: 4px;
+            outline: transparent;
     
-//             resize: none;
-//             cursor: pointer;
-//         }
+            resize: none;
+            cursor: pointer;
+        }
     
-//         &-comment::placeholder {
-//             font-weight: 400;
-//             font-size: 12px;
-//             line-height: 1.14;
-//             letter-spacing: 0.01em;
+        &-comment::placeholder {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.14;
+            letter-spacing: 0.01em;
     
-//             color: rgba(117, 117, 117, 0.5);
-//         }
+            color: rgba(117, 117, 117, 0.5);
+        }
     
-//         &-policy {
-//             display: flex;
-//             align-items: center;
-//             margin-bottom: 30px;
-//         }
-// }
+        &-policy {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+}
 
 
 
-// .policy-text {
-//     font-size: 14px;
-//     line-height: 1.71;
+.policy-text {
+    font-size: 12px;
+    line-height: 1.17;
 
-//     letter-spacing: 0.03em;
-// }
+    letter-spacing: 0.03em;
 
-// .policy-doc {
-//     color: var(--accent-color);
-// }
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    
+        letter-spacing: 0.03em;
+    }
+}
 
-// .custom-checkbox {
-//     display: block;
-//     width: 16px;
-//     height: 15px;
-//     margin-right: 8px;
+.policy-doc {
+    color: var(--accent-color);
+}
 
-//     border: 2px solid #212121;
-//     border-radius: 2px;
+.custom-checkbox {
+    display: block;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
 
-//     transition: border-color 250ms var(--taiming-function);
-// }
+    border: 2px solid #212121;
+    border-radius: 2px;
 
-// .checkbox:focus+.custom-checkbox {
-//     border-color: var(--accent-color);
-// }
+    transition: border-color 250ms var(--taiming-function);
+}
 
-// .checkbox:checked+.custom-checkbox {
-//     border-color: var(--accent-color);
-//     background-color: var(--accent-color);
-//     background-image: url(../image/icon/icon-check.svg);
-//     background-size: contain;
-//     background-origin: border-box;
-// }
+.checkbox:focus+.custom-checkbox {
+    border-color: var(--accent-color);
+}
+
+.checkbox:checked+.custom-checkbox {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    background-image: url(../image/icon/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+}
 
